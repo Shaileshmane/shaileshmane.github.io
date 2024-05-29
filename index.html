@@ -13,6 +13,14 @@
     <!-- Scroll Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+       
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+emailjs.init('vnz5MtiXZ6njOGUFZ')
+</script>
+
 </head>
 <body>
     <div class="container">
@@ -21,7 +29,7 @@
             <div class="header">
                 <h1>< Web Developers /> </h1>
                 <div class="navbar" id="menuList">
-                    <nav><a href="#">Home</a></nav>
+                    <nav><a href="#section1">Home</a></nav>
                     <nav><a href="#section2">Skills</a></nav>
                     <nav><a href="#section3">Projects</a></nav>
                     <nav><a href="#section5">About</a></nav>
@@ -147,17 +155,19 @@
 
             <div>
                  <h3>Get in touch with me</h3>
-                 <div class="social-media"><i class="ri-instagram-fill"></i></div>
-                 <div class="social-media"><i class="ri-linkedin-box-fill"></i></div>
+                 <div class="social-media"><a href="#"><i class="ri-instagram-fill"></i></a></div>
+                 <div class="social-media"><a href="#"><i class="ri-linkedin-box-fill"></i></a></div>
+                 <div class="social-media"><a href="#"><i class="ri-mail-fill"></i></a></div>
             </div>
     
-            <form action="#" class="myform">
+            <div class="myform">
                 <h1>Contact me</h1>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea name="" rows="5"  placeholder="Enter your message " id=""></textarea>
-                <input type="submit" class="submit-btn">
-            </form>
+                <input type="text" id="fullname" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea name=""  rows="5"  placeholder="Enter your message " id="message" ></textarea>
+                <!-- <input type="submit" class="submit-btn"> -->
+                <button onclick="SendMail()" class="submit-btn">send mail</button>
+            </div>
         </div>
          
         <div class="footer">
@@ -186,6 +196,21 @@
             menuList.style.maxHeight = '0px';
         }
       }
+
+
+    //   function sendmail(){
+    //     var params = {
+    //         from_name : document.getElementById('fullname').value,
+    //         email : document.getElementById('email').value,
+    //         messgae : document.getElementById('message').value
+    //     };
+
+    //     emailjs.sendmail('service_vo8ka9i', 'template_6z6xe1y', params).then( function(res){
+    //         alert("mail has been send ");
+    //     })
+    //   }
     </script>
+
+ 
 </body>
 </html>

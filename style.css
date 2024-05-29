@@ -221,11 +221,15 @@ button {
     padding: 15px;
     background: rgb(30, 31, 31);
     margin: 10px;
+    text-align: center;
 }
 
-.social-media i{
-    height: 100px;
-    width: 100px;
+.social-media a{
+    text-decoration: none;
+}
+.social-media a i{
+    font-size: 30px;
+    color: white;
 }
 .myform{
     display: flex;
@@ -251,6 +255,7 @@ button {
     border: 1px solid grey;
     background: transparent;
     padding: 5px;
+    color: #fff;
 }
 .submit-btn{
    background-color: rgb(30, 31, 31);
