@@ -20,10 +20,10 @@ var templateParams = {
   
   emailjs.send('service_vo8ka9i', 'template_6z6xe1y', templateParams).then(
     (response) => {
-      console.log('SUCCESS!', response.status, response.text);
+      alert('mail has been send')
     },
     (error) => {
-      console.log('FAILED...', error);
+      alert('something may be wrong');
     },
   );
 
