@@ -35,11 +35,14 @@ body {
    
 }
 
-button {
+button{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+    text-decoration: none;
+    color: white;
+     
 }
 
 
@@ -93,11 +96,13 @@ button {
 .title p{
     width: 50vw;
 }
-.title button{
+.title .download{
     border: none;
     background: rgb(30, 31, 31);
     color: white;
     border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 25px;
 }
 .title button:hover{
     box-shadow: 2px 2px 5px black;
@@ -105,6 +110,7 @@ button {
 .title-section .my-img img{
     height: 350px ;
     width: 400px ;
+    filter: grayscale(50);
 }
 
 #section2{
@@ -114,6 +120,7 @@ button {
     flex-direction: column;
     text-align: center;
     gap: 25px;
+    /* margin-top: 25vh; */
 }
 
 .skills{
@@ -338,8 +345,11 @@ button {
     gap: 30px;
    } 
    .title-section .my-img img{
-    width: 60vw;
-    height: 30vh;
+    width: 110vw;
+    height: 50vh;
+    opacity: 0.5;
+    background: rgb(30, 31, 31);
+    border-radius: 50%;
    }
 
    .project{
@@ -353,6 +363,10 @@ button {
    .images img{
     width: 80vw;
     height: 25vh;
+   }
+
+   #section2{
+    margin-top: 10vh;
    }
 
    #section5{
