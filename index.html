@@ -45,7 +45,7 @@ emailjs.init('vnz5MtiXZ6njOGUFZ')
                 <div class="title">
                     <p>Hello I'm</p>
                     <h1>Shailesh Mane</h1>
-                    <h3>A Full stack web developer</h3>
+                    <h3>I'm <span class="auto-type"></span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sint alias, dolore aliquam odio quod aliquid, similique aperiam a fuga reiciendis. Impedit necessitatibus sed perspiciatis, animi in quos et alias.</p>
                     <!-- <button >Download Resume</button> -->
                     <a href="SHAILESH_MANE.pdf" class="download" download="SHAILESH_MANE">Download Resume</a>
@@ -153,12 +153,14 @@ emailjs.init('vnz5MtiXZ6njOGUFZ')
         </div>
 
         <div id="contact-me">
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=13753873&style=0009&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
 
             <div>
                  <h3>Get in touch with me</h3>
-                 <div class="social-media"><a href="#"><i class="ri-instagram-fill"></i></a></div>
-                 <div class="social-media"><a href="#"><i class="ri-linkedin-box-fill"></i></a></div>
-                 <div class="social-media"><a href="#"><i class="ri-mail-fill"></i></a></div>
+                 <div class="social-media"><a href="https://www.instagram.com/_shailesh_m?igsh=YTM3aGp2aHVuN2c0"><i class="ri-instagram-fill"></i></a></div>
+                 <div class="social-media"><a href="https://www.linkedin.com/in/shailesh-mane"><i class="ri-linkedin-box-fill"></i></a></div>
+                 <div class="social-media"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="ri-mail-fill"></i></a></div>
             </div>
     
             <div class="myform">
@@ -177,6 +179,7 @@ emailjs.init('vnz5MtiXZ6njOGUFZ')
         </div>
     </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -198,6 +201,12 @@ emailjs.init('vnz5MtiXZ6njOGUFZ')
         }
       }
 
+      var typed = new Typed('.auto-type', {
+      strings: ['web Developer...', 'full stack developer...', 'front end developer...', ],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
 
     //   function sendmail(){
     //     var params = {
